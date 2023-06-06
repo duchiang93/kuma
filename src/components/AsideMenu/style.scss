@@ -1,0 +1,155 @@
+@import "../../mixins.scss";
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+
+  @include phone {
+    justify-content: space-between;
+    flex-direction: row;
+    height: 20vh;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      margin: 5rem auto;
+    }
+
+    @include phone {
+      margin-left: 20px;
+      img {
+        width: 80px;
+      }
+    }
+  }
+
+  .aside-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include phone {
+      flex-direction: row;
+      border-right: none;
+    }
+
+    .menu-items {
+      display: grid;
+      gap: 45px;
+      list-style: none;
+      text-align: center;
+      padding-bottom: 150px;
+
+      .menu-item {
+        a {
+          text-decoration: none;
+          color: #797979;
+          font-weight: 800;
+          font-size: 20px;
+          &:hover {
+            color: #8752a0;
+          }
+        }
+      }
+    }
+
+    .nav-footer {
+      display: flex;
+      height: 55px;
+      justify-content: center;
+      position: absolute;
+      bottom: 0px;
+
+      P {
+        display: flex;
+        align-items: center;
+        color: #797979;
+        text-transform: uppercase;
+      }
+    }
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  .toggle {
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background: url(../../assets/img/menu.png);
+    background-size: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 200;
+
+    @include phone {
+      display: flex;
+      position: static;
+      margin: 10px 10px 0 0;
+    }
+
+    &.active {
+      background: url(../../assets/img/close.png);
+      background-size: 35px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .sidebar {
+    display: none;
+    width: 100%;
+
+    &.active {
+      display: none;
+
+      @include phone {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    .sidebar-items {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 10px;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .sidebar-item {
+          display: flex;
+          margin: 0 10px;
+
+          a {
+            text-decoration: none;
+            color: #797979;
+            cursor: pointer;
+            display: block;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
+          }
+        }
+      }
+    }
+  }
+}

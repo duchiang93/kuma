@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "659103",
+      "name": "ic_arrow_left",
+      "font_class": "icarrowleft",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "659540",
+      "name": "ic_arrow_right",
+      "font_class": "icarrowleft-copy",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "691952",
+      "name": "档案管理",
+      "font_class": "danganguanli",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "5831385",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "26535237",
+      "name": "链接",
+      "font_class": "lianjie",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    }
+  ]
+}
