@@ -115,6 +115,7 @@
       @include phone {
         display: flex;
         flex-direction: row;
+        justify-content: center;
       }
     }
 
@@ -134,20 +135,14 @@
         margin: 0;
         padding: 0;
 
-        .sidebar-item {
-          display: flex;
-          margin: 0 10px;
-
-          a {
-            text-decoration: none;
-            color: #797979;
-            cursor: pointer;
-            display: block;
-            text-align: center;
-            white-space: nowrap;
-            -webkit-writing-mode: vertical-lr;
-            writing-mode: vertical-lr;
-          }
+        .burger-item {
+          text-decoration: none;
+          color: #797979;
+          display: block;
+          text-align: center;
+          white-space: nowrap;
+          -webkit-writing-mode: vertical-lr;
+          writing-mode: vertical-lr;
         }
       }
     }

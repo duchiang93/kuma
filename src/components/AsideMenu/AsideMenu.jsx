@@ -32,8 +32,10 @@ const AsideMenu = () => {
         <div className="sidebar-items">
           <ul>
             {asideMenu.map((item, index) => (
-              <li className="menu-item" key={index}>
-                <Link to={item.url}>{item.content}</Link>
+              <li key={index}>
+                <Link to={item.url} className="burger-item">
+                  {item.content}
+                </Link>
               </li>
             ))}
           </ul>
