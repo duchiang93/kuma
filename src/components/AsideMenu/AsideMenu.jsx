@@ -11,9 +11,11 @@ const AsideMenu = () => {
 
   return (
     <div className="menu-container">
-      <div className="logo">
-        <img src={logo} alt="" />
-      </div>
+      <Link to={"/"}>
+        <div className="logo">
+          <img src={logo} alt="" />
+        </div>
+      </Link>
       <div className="aside-menu ">
         <ul className={`menu-items ${isOpen ? "open" : ""}`}>
           {asideMenu.map((item, index) => (
